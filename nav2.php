@@ -23,6 +23,14 @@ navbar-default-link-active-color">
         <li><a href="adult-directory.php">Leaders</a></li>
       </ul>
     </li>
+        <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <!-- <li><a href="troop-directory.php">All</a></li> -->
+        <li><a href="add-scout.php">Add Scout</a></li>
+        <li><a href="add-leader.php">Add Leader</a></li>
+      </ul>
+    </li>
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advancement<b class="caret"></b></a>
       <ul class="dropdown-menu">
