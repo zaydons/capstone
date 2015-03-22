@@ -4,7 +4,7 @@
 
 <body>
 <h1>Contact Committee</h1>
-<?php include('nav.php') ?>
+<?php include('nav2.php') ?>
 
 
 </body>

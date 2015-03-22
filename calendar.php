@@ -3,7 +3,7 @@
 
 <body>
 <h1>Calendar</h1>
-<?php include('nav.php') ?>
+<?php include('nav2.php') ?>
 
 </body>
 </html>

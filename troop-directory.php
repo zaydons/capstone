@@ -3,7 +3,7 @@
 
 <body>
 <h1>Troop Directory</h1>
-<?php include('nav.php') ?>
+<?php include('nav2.php') ?>
 <p>
 <a href="scout-directory.php">Scout Directory</a><br />
 <a href="parent-directory.php">Parents Directory</a><br />

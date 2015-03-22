@@ -6,7 +6,7 @@
 
 <body>
 <h1>Scout Profile</h1>
-<?php include('nav.php') ?>
+<?php include('nav2.php') ?>
 
 </body>
 </html>
