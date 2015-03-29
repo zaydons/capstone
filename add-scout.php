@@ -8,9 +8,9 @@
 
           <div class="col-lg-12">
             <div class="well bs-component" data-relatedvars="legend-color,legend-border-color,input-color,input-height-base,input-bg,input-border,input-border-radius,input-border-focus,input-color-placeholder,input-bg-disabled,input-height-small,input-height-large,state-success-text,state-success-bg,state-warning-text,state-warning-bg,state-danger-text,state-danger-bg,input-group-addon-bg,input-group-addon-border-color,input-border-radius-large,input-border-radius-small">
-              <form class="form-horizontal">
+              <form class="form-horizontal" method="post" action="scout-add.php">
                 <fieldset>
-                  <legend>New Scout</legend>
+                  <legend>Scout Information</legend>
                   <div class="form-group">
                     <label for="firstname" class="col-lg-2 control-label">First Name</label>
                     <div class="col-lg-6">
@@ -32,7 +32,7 @@
                   <div class="form-group">
                     <label for="bsa_id" class="col-lg-2 control-label">BSA ID</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="bsa_id" placeholder="BSA ID">
+                      <input type="text" class="form-control" id="bsa_id" maxlength="11" placeholder="BSA ID">
                     </div>
                   </div>
                   <div class="form-group">
@@ -50,13 +50,13 @@
                   <div class="form-group">
                     <label for="state" class="col-lg-2 control-label">State</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="state" placeholder="State">
+                      <input type="text" class="form-control" id="state" maxlength="2" placeholder="State">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="zip" class="col-lg-2 control-label">Zip Code</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                      <input type="text" class="form-control" id="zip" maxlength="5" placeholder="Zip Code">
                     </div>
                   </div>
                   <div class="form-group">
@@ -68,13 +68,13 @@
                   <div class="form-group">
                     <label for="home_phone" class="col-lg-2 control-label">Home Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="home_phone" placeholder="Home Phone">
+                      <input type="text" class="form-control" id="home_phone" maxlength="10" placeholder="Home Phone">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="cell_phone" class="col-lg-2 control-label">Cell Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="cell_phone" placeholder="Cell Phone">
+                      <input type="text" class="form-control" id="cell_phone" maxlength="10" placeholder="Cell Phone">
                     </div>
                   </div>
                   <div class="form-group">
@@ -111,6 +111,13 @@
                     </div>
                   </div>
                   <div class="form-group">
+                    <label for="rank_date" class="col-lg-2 control-label">Rank Date</label>
+                    <div class="col-lg-6">
+                      <input type="date" class="form-control" id="rank_date" placeholder="Rank Date">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
                     <label for="leadership_position" class="col-lg-2 control-label">Leadership Position</label>
                     <div class="col-lg-10">
                       <select class="form-control" id="leadership_position">
@@ -134,6 +141,125 @@
                       </select>
                     </div>
                   </div>
+                  <hr>
+                  <legend>Parent 1 Information</legend>
+                  <div class="form-group">
+                    <label for="firstname1" class="col-lg-2 control-label">Parent 1 First Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="firstname1" placeholder="Parent 1 First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="firstname" class="col-lg-2 control-label">Parent 1 Last Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="lastname1" placeholder="Parent 1 Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="relation1" class="col-lg-2 control-label">Parent 1 Relation</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="relation1" placeholder="Parent 1 Relation">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="homephone1" class="col-lg-2 control-label">Parent 1 Home Phone </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="homephone1" placeholder="Parent 1 Home Phone">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="cellphone1" class="col-lg-2 control-label">Parent 1 Cell Phone</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="cellphone1" placeholder="Parent 1 Cell Phone">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email1" class="col-lg-2 control-label">Parent 1 Email</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="email1" placeholder="Parent 1 Email">
+                    </div>
+                  </div>
+                  <hr>
+                  <legend>Parent 2 Information</legend>
+                  <div class="form-group">
+                    <label for="firstname2" class="col-lg-2 control-label">Parent 2 First Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="firstname2" placeholder="Parent 2 First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname2" class="col-lg-2 control-label">Parent 2 Last Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="lastname2" placeholder="Parent 2 Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="relation2" class="col-lg-2 control-label">Parent 2 Relation</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="relation2" placeholder="Parent 2 Relation">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="homephone2" class="col-lg-2 control-label">Parent 2 Home Phone </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="homephone2" placeholder="Parent 2 Home Phone">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="cellphone2" class="col-lg-2 control-label">Parent 2 Cell Phone</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="cellphone2" placeholder="Parent 2 Cell Phone">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email2" class="col-lg-2 control-label">Parent 2 Email</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="email2" placeholder="Parent 2 Email">
+                    </div>
+                  </div>
+                  <hr>
+                  <legend>Emergency Contact Information</legend>
+                  <div class="form-group">
+                    <label for="firstname1" class="col-lg-2 control-label">Emergency Contact 1 First Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="firstname1" placeholder="Emergency Contact 1 First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname1" class="col-lg-2 control-label">Emergency Contact 1 Last Name </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="lastname1" placeholder="Emergency Contact 2 Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone1" class="col-lg-2 control-label">Emergency Contact 1 Phone Number </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="phone1" placeholder="Emergency Contact 2 Phone Number">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="firstname2" class="col-lg-2 control-label">Emergency Contact 2 First Name </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="firstname2" placeholder="Emergency Contact 2 First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname2" class="col-lg-2 control-label">Emergency Contact 2 Last Name </label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="lastname2" placeholder="Emergency Contact 2 Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone2" class="col-lg-2 control-label">Emergency Contact 2 Phone Number</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="phone2" placeholder="Emergency Contact 2 Phone Number">
+                    </div>
+                  </div>
+
+
+
+
+
 
 
                   <div class="form-group">

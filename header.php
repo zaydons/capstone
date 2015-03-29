@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>TroopSoft</title>
 <!-- <link href="loginmodule.css" rel="stylesheet" type="text/css" /> -->
