@@ -6,6 +6,9 @@
 <h1>Add Leader</h1>
 <?php include('nav2.php') ?>
 
+<form>
+
+</form>
 
 </body>
 </html>
