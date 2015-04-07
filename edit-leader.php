@@ -3,7 +3,7 @@
 <?php require_once('config.php');?>
 
 <body>
-<h1>Edit Scout</h1>
+<h1>Edit Leader</h1>
 <?php include('nav2.php') ?>
 
 <?php
@@ -12,14 +12,13 @@ if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-$scout_id = $_GET['scout_id'];
-echo "scout_id: ".$scout_id;
+$id = $_GET['leader_id'];
+echo "leader_id: ".$id;
 
-/*This is where the error is */
-$result = mysqli_query($con,"SELECT * FROM scouts WHERE scout_id='$scout_id' ");
+$result = mysqli_query($con,"SELECT * FROM leaders WHERE id='$id' ");
 $row = mysqli_fetch_row($result);
 
-//var_dump($row);
+// var_dump($row);
 // echo $row[0];
 // echo $row[1];
 // echo $row[2];
@@ -43,55 +42,49 @@ $row = mysqli_fetch_row($result);
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Position</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[15]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[10]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Email Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[12]"?>">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Email Address 2</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[13]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[3]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Cell Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[11]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[9]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Home Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[10]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[8]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[5]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[4]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">City</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[6]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">State</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[7]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Zip</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[8]"?>">
+                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
 

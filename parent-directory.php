@@ -46,6 +46,8 @@ echo "<td>" . $row['relation2'] . "</td>";
 echo "<td>" . $row['homephone2'] . "</td>";
 echo "<td>" . $row['cellphone2'] . "</td>";
 echo "<td>" . $row['email2'] . "</td>";
+echo "<td> <a href='edit-parents.php?parents=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
+
 echo "</tr>";
 }
 echo "</table>";
