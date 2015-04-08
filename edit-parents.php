@@ -25,8 +25,10 @@ $row = mysqli_fetch_row($result);
 // echo $row[3];
 ?>
 <?php
-  echo $row[15]; echo $row[14];
-
+  echo "<br/> Scout Name: ";
+  echo $row[15]; 
+  echo " ";
+  echo $row[14];
 ?>
 <form class="form-horizontal">
                 <fieldset>

@@ -41,10 +41,29 @@ $row = mysqli_fetch_row($result);
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Position</label>
+                    <label for="leadership_position" class="col-lg-2 control-label">Position</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[15]"?>">
-                    </div>
+                       <select class="form-control" id="leadership_position">
+                        <option value="None">None</option>
+                        <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
+                        <option value="Assistant Senior Patrol Leader">Assistant Senior Patrol Leader</option>
+                        <option value="Bugler">Bugler</option>
+                        <option value="Chaplain Aide">Chaplain Aide</option>
+                        <option value="Den Chief">Den Chief</option>
+                        <option value="Historian">Historian</option>
+                        <option value="Junior Assistant Scoutmaster">Junior Assistant Scoutmaster</option>
+                        <option value="Leave No Trace Trainer">Leave No Trace Trainer</option>
+                        <option value="Librarian">Librarian</option>
+                        <option value="Order of the Arrow Represenative">Order of the Arrow Represenative</option>
+                        <option value="Patrol Leader">Patrol Leader</option>
+                        <option value="Quartermaster">Quartermaster</option>
+                        <option value="Scribe">Scribe</option>
+                        <option value="Senior Patrol Leader">Senior Patrol Leader</option>
+                        <option value="Troop Guide">Troop Guide</option>
+                        <option value="Webmaster">Webmaster</option>
+                      </select>
+                        <!-- <input type="text" class="form-control" id="last_name" value="<?php echo "$row[15]"?>"> -->
+                       </div>
                   </div>
                   <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Email Address</label>

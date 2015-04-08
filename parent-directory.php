@@ -29,7 +29,6 @@ echo "<table class='table table-striped table-hover'>
 <th>Cell Phone</th>
 <th>Email</th>
 <th>Edit</th>
-<th>Delete</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))

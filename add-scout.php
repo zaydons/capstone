@@ -62,7 +62,7 @@
                   <div class="form-group">
                     <label for="dob" class="col-lg-2 control-label">Birthday</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="lastname" placeholder="Date of Birth">
+                      <input type="date" class="form-control" id="dob" placeholder="Date of Birth">
                     </div>
                   </div>
                   <div class="form-group">
@@ -99,14 +99,14 @@
                     <label for="rank" class="col-lg-2 control-label">Rank</label>
                     <div class="col-lg-10">
                       <select class="form-control" id="rank">
-                        <option>None</option>
-                        <option>Scout</option>
-                        <option>Tenderfoot</option>
-                        <option>Second Class</option>
-                        <option>First Class</option>
-                        <option>Star</option>
-                        <option>Life</option>
-                        <option>Eagle</option>
+                        <option value="None">None</option>
+                        <option value="Scout">Scout</option>
+                        <option value="Tenderfoot">Tenderfoot</option>
+                        <option value="Second Class">Second Class</option>
+                        <option value="First Class">First Class</option>
+                        <option value="Star">Star</option>
+                        <option value="Life">Life</option>
+                        <option value="Eagle">Eagle</option>
                       </select>
                     </div>
                   </div>
@@ -120,24 +120,24 @@
                   <div class="form-group">
                     <label for="leadership_position" class="col-lg-2 control-label">Leadership Position</label>
                     <div class="col-lg-10">
-                      <select class="form-control" id="leadership_position">
-                        <option>None</option>
-                        <option>Assistant Patrol Leader</option>
-                        <option>Assistant Senior Patrol Leader</option>
-                        <option>Bugler</option>
-                        <option>Chaplain Aide</option>
-                        <option>Den Chief</option>
-                        <option>Historian</option>
-                        <option>Junior Assistant Scoutmaster</option>
-                        <option>Leave No Trace Trainer</option>
-                        <option>Librarian</option>
-                        <option>Order of the Arrow Represenative</option>
-                        <option>Patrol Leader</option>
-                        <option>Quartermaster</option>
-                        <option>Scribe</option>
-                        <option>Senior Patrol Leader</option>
-                        <option>Troop Guide</option>
-                        <option>Webmaster</option>
+                       <select class="form-control" id="leadership_position">
+                        <option value="None">None</option>
+                        <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
+                        <option value="Assistant Senior Patrol Leader">Assistant Senior Patrol Leader</option>
+                        <option value="Bugler">Bugler</option>
+                        <option value="Chaplain Aide">Chaplain Aide</option>
+                        <option value="Den Chief">Den Chief</option>
+                        <option value="Historian">Historian</option>
+                        <option value="Junior Assistant Scoutmaster">Junior Assistant Scoutmaster</option>
+                        <option value="Leave No Trace Trainer">Leave No Trace Trainer</option>
+                        <option value="Librarian">Librarian</option>
+                        <option value="Order of the Arrow Represenative">Order of the Arrow Represenative</option>
+                        <option value="Patrol Leader">Patrol Leader</option>
+                        <option value="Quartermaster">Quartermaster</option>
+                        <option value="Scribe">Scribe</option>
+                        <option value="Senior Patrol Leader">Senior Patrol Leader</option>
+                        <option value="Troop Guide">Troop Guide</option>
+                        <option value="Webmaster">Webmaster</option>
                       </select>
                     </div>
                   </div>
@@ -150,7 +150,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="firstname" class="col-lg-2 control-label">Parent 1 Last Name</label>
+                    <label for="lastname1" class="col-lg-2 control-label">Parent 1 Last Name</label>
                     <div class="col-lg-6">
                       <input type="text" class="form-control" id="lastname1" placeholder="Parent 1 Last Name">
                     </div>
