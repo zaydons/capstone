@@ -43,11 +43,11 @@ navbar-default-link-active-color">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rosters<b class="caret"></b></a>
       <ul class="dropdown-menu">
         <li><a href="roster.php">Roster</a></li>
-        <li><a href="member-summary.php">Scout Profile</a></li>
+        <!-- <li><a href="member-summary.php">Scout Profile</a></li> -->
         <li><a href="patrols.php">Patrols</a></li>
       </ul>
     </li>
-    <li><a href="calendar.php">Calendar</a></li>
+    <!-- <li><a href="calendar.php">Calendar</a></li> -->
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
       <ul class="dropdown-menu">

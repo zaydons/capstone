@@ -44,7 +44,7 @@ echo "<td>" . $row['physical_wellness'] . "</td>";
 echo "<td>" . $row['weather_hazards'] . "</td>";
 echo "<td>" . $row['climb_safely'] . "</td>";
 echo "<td>" . $row['trek_safely'] . "</td>";
-echo "<td> <button type='button' class='btn btn-primary btn-xs'>Edit</button> </td>"; 
+echo "<td> <a href='edit_training.php?leader_id=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
 echo "</tr>";
 }
 echo "</table>";
