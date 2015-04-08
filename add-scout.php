@@ -12,21 +12,21 @@
                 <fieldset>
                   <legend>Scout Information</legend>
                   <div class="form-group">
-                    <label for="firstname" class="col-lg-2 control-label">First Name</label>
+                    <label for="first_name" class="col-lg-2 control-label">First Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                      <input type="text" class="form-control" id="first_name" placeholder="First Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="middlename" class="col-lg-2 control-label">Middle Name</label>
+                    <label for="middle_name" class="col-lg-2 control-label">Middle Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="middlename" placeholder="Middle Name">
+                      <input type="text" class="form-control" id="middle_name" placeholder="Middle Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="lastname" class="col-lg-2 control-label">Last Name</label>
+                    <label for="last_name" class="col-lg-2 control-label">Last Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                      <input type="text" class="form-control" id="last_name" placeholder="Last Name">
                     </div>
                   </div>
                   <div class="form-group">
@@ -144,115 +144,115 @@
                   <hr>
                   <legend>Parent 1 Information</legend>
                   <div class="form-group">
-                    <label for="firstname1" class="col-lg-2 control-label">Parent 1 First Name</label>
+                    <label for="parent1_firstname" class="col-lg-2 control-label">Parent 1 First Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname1" placeholder="Parent 1 First Name">
+                      <input type="text" class="form-control" id="parent1_firstname" placeholder="Parent 1 First Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="lastname1" class="col-lg-2 control-label">Parent 1 Last Name</label>
+                    <label for="parent1_lastname" class="col-lg-2 control-label">Parent 1 Last Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname1" placeholder="Parent 1 Last Name">
+                      <input type="text" class="form-control" id="parent1_lastname" placeholder="Parent 1 Last Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="relation1" class="col-lg-2 control-label">Parent 1 Relation</label>
+                    <label for="parent1_relation" class="col-lg-2 control-label">Parent 1 Relation</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="relation1" placeholder="Parent 1 Relation">
+                      <input type="text" class="form-control" id="parent1_relation" placeholder="Parent 1 Relation">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="homephone1" class="col-lg-2 control-label">Parent 1 Home Phone </label>
+                    <label for="parent1_homephone" class="col-lg-2 control-label">Parent 1 Home Phone </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="homephone1" placeholder="Parent 1 Home Phone">
+                      <input type="text" class="form-control" id="parent1_homephone" placeholder="Parent 1 Home Phone">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="cellphone1" class="col-lg-2 control-label">Parent 1 Cell Phone</label>
+                    <label for="parent1_cellphone" class="col-lg-2 control-label">Parent 1 Cell Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="cellphone1" placeholder="Parent 1 Cell Phone">
+                      <input type="text" class="form-control" id="parent1_cellphone" placeholder="Parent 1 Cell Phone">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="email1" class="col-lg-2 control-label">Parent 1 Email</label>
+                    <label for="parent1_email" class="col-lg-2 control-label">Parent 1 Email</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="email1" placeholder="Parent 1 Email">
+                      <input type="text" class="form-control" id="parent1_email" placeholder="Parent 1 Email">
                     </div>
                   </div>
                   <hr>
                   <legend>Parent 2 Information</legend>
                   <div class="form-group">
-                    <label for="firstname2" class="col-lg-2 control-label">Parent 2 First Name</label>
+                    <label for="parent2_firstname" class="col-lg-2 control-label">Parent 2 First Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname2" placeholder="Parent 2 First Name">
+                      <input type="text" class="form-control" id="parent2_firstname" placeholder="Parent 2 First Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="lastname2" class="col-lg-2 control-label">Parent 2 Last Name</label>
+                    <label for="parent2_lastname" class="col-lg-2 control-label">Parent 2 Last Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname2" placeholder="Parent 2 Last Name">
+                      <input type="text" class="form-control" id="parent2_lastname" placeholder="Parent 2 Last Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="relation2" class="col-lg-2 control-label">Parent 2 Relation</label>
+                    <label for="parent2_relation" class="col-lg-2 control-label">Parent 2 Relation</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="relation2" placeholder="Parent 2 Relation">
+                      <input type="text" class="form-control" id="parent2_relation" placeholder="Parent 2 Relation">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="homephone2" class="col-lg-2 control-label">Parent 2 Home Phone </label>
+                    <label for="parent2_homephone" class="col-lg-2 control-label">Parent 2 Home Phone </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="homephone2" placeholder="Parent 2 Home Phone">
+                      <input type="text" class="form-control" id="parent2_homephone" placeholder="Parent 2 Home Phone">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="cellphone2" class="col-lg-2 control-label">Parent 2 Cell Phone</label>
+                    <label for="parent2_cellphone" class="col-lg-2 control-label">Parent 2 Cell Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="cellphone2" placeholder="Parent 2 Cell Phone">
+                      <input type="text" class="form-control" id="parent2_cellphone" placeholder="Parent 2 Cell Phone">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="email2" class="col-lg-2 control-label">Parent 2 Email</label>
+                    <label for="parent2_email" class="col-lg-2 control-label">Parent 2 Email</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="email2" placeholder="Parent 2 Email">
+                      <input type="text" class="form-control" id="parent2_email" placeholder="Parent 2 Email">
                     </div>
                   </div>
                   <hr>
                   <legend>Emergency Contact Information</legend>
                   <div class="form-group">
-                    <label for="firstname1" class="col-lg-2 control-label">Emergency Contact 1 First Name</label>
+                    <label for="emergency1_firstname" class="col-lg-2 control-label">Emergency Contact 1 First Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname1" placeholder="Emergency Contact 1 First Name">
+                      <input type="text" class="form-control" id="emergency1_firstname" placeholder="Emergency Contact 1 First Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="lastname1" class="col-lg-2 control-label">Emergency Contact 1 Last Name </label>
+                    <label for="emergency1_lastname" class="col-lg-2 control-label">Emergency Contact 1 Last Name </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname1" placeholder="Emergency Contact 2 Last Name">
+                      <input type="text" class="form-control" id="emergency1_lastname" placeholder="Emergency Contact 2 Last Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="phone1" class="col-lg-2 control-label">Emergency Contact 1 Phone Number </label>
+                    <label for="emergency1_phone" class="col-lg-2 control-label">Emergency Contact 1 Phone Number </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="phone1" placeholder="Emergency Contact 2 Phone Number">
+                      <input type="text" class="form-control" id="emergency1_phone" placeholder="Emergency Contact 2 Phone Number">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="firstname2" class="col-lg-2 control-label">Emergency Contact 2 First Name </label>
+                    <label for="emergency2_firstname" class="col-lg-2 control-label">Emergency Contact 2 First Name </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname2" placeholder="Emergency Contact 2 First Name">
+                      <input type="text" class="form-control" id="emergency2_firstname" placeholder="Emergency Contact 2 First Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="lastname2" class="col-lg-2 control-label">Emergency Contact 2 Last Name </label>
+                    <label for="emergency2_lastname" class="col-lg-2 control-label">Emergency Contact 2 Last Name </label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname2" placeholder="Emergency Contact 2 Last Name">
+                      <input type="text" class="form-control" id="emergency2_lastname" placeholder="Emergency Contact 2 Last Name">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="phone2" class="col-lg-2 control-label">Emergency Contact 2 Phone Number</label>
+                    <label for="emergency2_phone" class="col-lg-2 control-label">Emergency Contact 2 Phone Number</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="phone2" placeholder="Emergency Contact 2 Phone Number">
+                      <input type="text" class="form-control" id="emergency2_phone" placeholder="Emergency Contact 2 Phone Number">
                     </div>
                   </div>
 
