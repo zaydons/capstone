@@ -11,7 +11,7 @@
 	I literally do not know what to put on this page, so I am just filling it with random text so it doesn't look so blank.
 </p>
 <p>
-	If you find any bugs please report them to me at zaydons@gmail.com
+	If you find any bugs please report them to me at zaydons@sunyit.edu
 </p>
 </body>
 </html>
