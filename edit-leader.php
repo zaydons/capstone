@@ -28,67 +28,65 @@ $row = mysqli_fetch_row($result);
 <form class="form-horizontal">
                 <fieldset>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Last Name</label>
+                    <label for="lastname" class="col-lg-2 control-label">Last Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[1]"?>">
+                      <input type="text" class="form-control" id="lastname" value="<?php echo "$row[1]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="first-name" class="col-lg-2 control-label">First Name</label>
+                    <label for="firstname" class="col-lg-2 control-label">First Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[2]"?>">
+                      <input type="text" class="form-control" id="firstname" value="<?php echo "$row[2]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Position</label>
+                    <label for="position" class="col-lg-2 control-label">Position</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[10]"?>">
+                      <input type="text" class="form-control" id="position" value="<?php echo "$row[10]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Email Address</label>
+                    <label for="email" class="col-lg-2 control-label">Email Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[3]"?>">
+                      <input type="text" class="form-control" id="email" value="<?php echo "$row[3]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Cell Phone</label>
+                    <label for="cell_phone" class="col-lg-2 control-label">Cell Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[9]"?>">
+                      <input type="text" class="form-control" id="cell_phone" value="<?php echo "$row[9]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Home Phone</label>
+                    <label for="home_phone" class="col-lg-2 control-label">Home Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[8]"?>">
+                      <input type="text" class="form-control" id="home_phone" value="<?php echo "$row[8]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Address</label>
+                    <label for="address" class="col-lg-2 control-label">Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[4]"?>">
+                      <input type="text" class="form-control" id="address" value="<?php echo "$row[4]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">City</label>
+                    <label for="city" class="col-lg-2 control-label">City</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[5]"?>">
+                      <input type="text" class="form-control" id="city" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">State</label>
+                    <label for="state" class="col-lg-2 control-label">State</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[6]"?>">
+                      <input type="text" class="form-control" id="state" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Zip</label>
+                    <label for="zip" class="col-lg-2 control-label">Zip</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[7]"?>">
+                      <input type="text" class="form-control" id="zip" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
-
-
                 </fieldset>
 </form>
 

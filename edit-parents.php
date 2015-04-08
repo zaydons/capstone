@@ -33,67 +33,65 @@ $row = mysqli_fetch_row($result);
 <form class="form-horizontal">
                 <fieldset>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 1 Last Name</label>
+                    <label for="lastname1" class="col-lg-2 control-label">Parent 1 Last Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[1]"?>">
+                      <input type="text" class="form-control" id="lastname1" value="<?php echo "$row[1]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="first-name" class="col-lg-2 control-label">Parent 1 First Name</label>
+                    <label for="firstname1" class="col-lg-2 control-label">Parent 1 First Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[2]"?>">
+                      <input type="text" class="form-control" id="firstname1" value="<?php echo "$row[2]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Relation</label>
+                    <label for="relation1" class="col-lg-2 control-label">Relation</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[3]"?>">
+                      <input type="text" class="form-control" id="relation1" value="<?php echo "$row[3]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 1 Cell Phone</label>
+                    <label for="cellphone1" class="col-lg-2 control-label">Parent 1 Cell Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[5]"?>">
+                      <input type="text" class="form-control" id="cellphone1" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 1 Email Address</label>
+                    <label for="email1" class="col-lg-2 control-label">Parent 1 Email Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[6]"?>">
+                      <input type="text" class="form-control" id="email1" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 2 Last Name</label>
+                    <label for="lastname2" class="col-lg-2 control-label">Parent 2 Last Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[7]"?>">
+                      <input type="text" class="form-control" id="lastname2" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 2 First Name</label>
+                    <label for="firstname2" class="col-lg-2 control-label">Parent 2 First Name</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[8]"?>">
+                      <input type="text" class="form-control" id="firstname2" value="<?php echo "$row[8]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 2 Relation</label>
+                    <label for="relation2" class="col-lg-2 control-label">Parent 2 Relation</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[9]"?>">
+                      <input type="text" class="form-control" id="relation2" value="<?php echo "$row[9]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 2 Cell Phone</label>
+                    <label for="cellphone2" class="col-lg-2 control-label">Parent 2 Cell Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[11]"?>">
+                      <input type="text" class="form-control" id="cellphone2" value="<?php echo "$row[11]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Parent 2 Email Address</label>
+                    <label for="email2" class="col-lg-2 control-label">Parent 2 Email Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[12]"?>">
+                      <input type="text" class="form-control" id="email2" value="<?php echo "$row[12]"?>">
                     </div>
                   </div>
-
-
                 </fieldset>
 </form>
 

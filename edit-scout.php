@@ -66,51 +66,51 @@ $row = mysqli_fetch_row($result);
                        </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Email Address</label>
+                    <label for="email1" class="col-lg-2 control-label">Email Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[12]"?>">
+                      <input type="text" class="form-control" id="email1" value="<?php echo "$row[12]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Email Address 2</label>
+                    <label for="email2" class="col-lg-2 control-label">Email Address 2</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[13]"?>">
+                      <input type="text" class="form-control" id="email2" value="<?php echo "$row[13]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Cell Phone</label>
+                    <label for="cell_phone" class="col-lg-2 control-label">Cell Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[11]"?>">
+                      <input type="text" class="form-control" id="cell_phone" value="<?php echo "$row[11]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Home Phone</label>
+                    <label for="home_phone" class="col-lg-2 control-label">Home Phone</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[10]"?>">
+                      <input type="text" class="form-control" id="home_phone" value="<?php echo "$row[10]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Address</label>
+                    <label for="address" class="col-lg-2 control-label">Address</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[5]"?>">
+                      <input type="text" class="form-control" id="address" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">City</label>
+                    <label for="city" class="col-lg-2 control-label">City</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[6]"?>">
+                      <input type="text" class="form-control" id="city" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">State</label>
+                    <label for="state" class="col-lg-2 control-label">State</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[7]"?>">
+                      <input type="text" class="form-control" id="state" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="last_name" class="col-lg-2 control-label">Zip</label>
+                    <label for="zip" class="col-lg-2 control-label">Zip</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[8]"?>">
+                      <input type="text" class="form-control" id="zip" value="<?php echo "$row[8]"?>">
                     </div>
                   </div>
 
