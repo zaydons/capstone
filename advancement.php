@@ -23,7 +23,6 @@ echo "<table class='table table-striped table-hover'>
 <th>Rank</th>
 <th>Rank Date</th>
 <th>Edit</th>
-<th>Delete</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
@@ -41,8 +40,6 @@ echo "</table>";
 
 mysqli_close($con);
 ?>
-
-<button type="button" class="btn btn-primary">Add Scout</button>
 
 </body>
 </html>
