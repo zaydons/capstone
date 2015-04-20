@@ -46,7 +46,8 @@ echo "<td>" . $row['address'] . "</td>";
 echo "<td>" . $row['city'] . "</td>";
 echo "<td>" . $row['state'] . "</td>";
 echo "<td>" . $row['zip'] . "</td>";
-echo "<td> <a href='edit-leader.php?leader_id=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
+echo "<td> <a href='edit-leader.php?leader_id=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>";
+echo "<td> <a href='delete-leader.php?leader_id=$row[id]' onclick=\"return confirm('Really delete?');\"> <button type='button' class='btn btn-primary btn-xs'>Delete</button></a> </td>"; 
 echo "</tr>";
 }
 echo "</table>";

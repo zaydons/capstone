@@ -8,123 +8,127 @@
 
           <div class="col-lg-12">
             <div class="well bs-component" data-relatedvars="legend-color,legend-border-color,input-color,input-height-base,input-bg,input-border,input-border-radius,input-border-focus,input-color-placeholder,input-bg-disabled,input-height-small,input-height-large,state-success-text,state-success-bg,state-warning-text,state-warning-bg,state-danger-text,state-danger-bg,input-group-addon-bg,input-group-addon-border-color,input-border-radius-large,input-border-radius-small">
-              <form class="form-horizontal" method="post" action="leader-add.php">
+              <form class="form-horizontal" method="POST" action="leader-add.php">
                 <fieldset>
                   <legend>Leader Information</legend>
                   <div class="form-group">
                     <label for="firstname" class="col-lg-2 control-label">First Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
                     </div>
                   </div>
                  
                   <div class="form-group">
                     <label for="lastname" class="col-lg-2 control-label">Last Name</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname">
                     </div>
                   </div>
-                  
+                  <div class="form-group">
+                    <label for="bsa_id" class="col-lg-2 control-label">BSA ID</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" id="bsa_id" maxlength="11" placeholder="BSA ID" name="bsaid">
+                    </div>
+                  </div>
                   <div class="form-group">
                     <label for="address" class="col-lg-2 control-label">Address</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="address" placeholder="Address">
+                      <input type="text" class="form-control" id="address" placeholder="Address" name="address">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="city" class="col-lg-2 control-label">City</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="city" placeholder="City">
+                      <input type="text" class="form-control" id="city" placeholder="City" name="city">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="state" class="col-lg-2 control-label">State</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="state" maxlength="2" placeholder="State">
+                      <input type="text" class="form-control" id="state" maxlength="2" placeholder="State" name="state">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="zip" class="col-lg-2 control-label">Zip Code</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="zip" maxlength="5" placeholder="Zip Code">
+                      <input type="text" class="form-control" id="zip" maxlength="5" placeholder="Zip Code" name="zip">
                     </div>
                   </div>
                   
                   <div class="form-group">
                     <label for="home_phone" class="col-lg-2 control-label">Home Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="home_phone" maxlength="10" placeholder="Home Phone">
+                      <input type="text" class="form-control" id="home_phone" maxlength="10" placeholder="Home Phone" name="homephone">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="cell_phone" class="col-lg-2 control-label">Cell Phone</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="cell_phone" maxlength="10" placeholder="Cell Phone">
+                      <input type="text" class="form-control" id="cell_phone" maxlength="10" placeholder="Cell Phone" name="cellphone">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="email" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-6">
-                      <input type="email" class="form-control" id="email" placeholder="Email">
+                      <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="position" class="col-lg-2 control-label">Position</label>
                     <div class="col-lg-6">
-                      <input type="text" class="form-control" id="position" placeholder="Position">
+                      <input type="text" class="form-control" id="position" placeholder="Position" name="position">
                     </div>
-                  </div>
-<!--                   
+                  </div>                  
                 <hr>
                   <legend>Trainings</legend>
                   <div class="form-group">
                     <label for="youth_protection" class="col-lg-2 control-label">Youth Protection</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="youth_protection" placeholder="Youth Protection">
+                      <input type="date" class="form-control" id="youth_protection" placeholder="Youth Protection" name="youthprotection">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="venturing_youth_protection" class="col-lg-2 control-label">Venturing Youth Protection</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="venturing_youth_protection" placeholder="Venturing Youth Protection">
+                      <input type="date" class="form-control" id="venturing_youth_protection" name="venturing_youth_protection" placeholder="Venturing Youth Protection">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="safe_swim" class="col-lg-2 control-label">Safe Swim</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="safe_swim" placeholder="Safe Swim">
+                      <input type="date" class="form-control" id="safe_swim" name="safe_swim" placeholder="Safe Swim">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="safety_afloat" class="col-lg-2 control-label">Safety Afloat</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="safety_afloat" placeholder="Safety Afloat">
+                      <input type="date" class="form-control" id="safety_afloat" name="safety_afloat" placeholder="Safety Afloat">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="physical_wellness" class="col-lg-2 control-label">Physical Wellness</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="physical_wellness" placeholder="Physical Wellness">
+                     <input type="date" class="form-control" id="physical_wellness" name="physical_wellness" placeholder="Physical Wellness">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="weather_hazards" class="col-lg-2 control-label">Weather Hazards</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="weather_hazards" placeholder="Weather Hazards">
+                      <input type="date" class="form-control" id="weather_hazards" name="weather_hazards" placeholder="Weather Hazards">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="climb_safely" class="col-lg-2 control-label">Climb Safely</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="climb_safely" placeholder="Climb Safely">
+                      <input type="date" class="form-control" id="climb_safely" name="climb_safely" placeholder="Climb Safely">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="trek_safely" class="col-lg-2 control-label">Trek Safely</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="trek_safely" placeholder="Trek Safely">
+                      <input type="date" class="form-control" id="trek_safely" name="trek_safely" placeholder="Trek Safely">
                     </div>
-                  </div> -->
+                  </div> 
                   <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
                       <!-- <button class="btn btn-default">Cancel</button> -->

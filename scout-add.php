@@ -41,6 +41,8 @@ $emergency2firstname =  mysqli_real_escape_string($con, $_POST['emergency2firstn
 $emergency2lastname =  mysqli_real_escape_string($con, $_POST['emergency2lastname']);
 $emergency2phone = mysqli_real_escape_string($con, $_POST['emergency2phone']);
 
+
+
 $query1 = "INSERT INTO `scouts`(`scout_id`, `last_name`, `first_name`, `middle_name`, `bsa_id`,
  `address`, `city`, `state`, `zip`, `dob`, `home_phone`, `cell_phone`, `email1`, `email2`,
   `date_joined`, `leadership_position`, `rank`, `rank_date`)
