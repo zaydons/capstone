@@ -13,7 +13,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM parents, scouts");
+$result = mysqli_query($con,"SELECT * FROM parents");
 
 echo "<table class='table table-striped table-hover'>
 <tr>
@@ -35,7 +35,7 @@ while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
 echo "<td>" . $row['first_name'] , $row['last_name'] . "</td>" ; 
-echo "<td>" . $row['firstname1'] , $row['lastname1'] . "</td>";
+echo "<td>" . $row['firstname1'] , $row['parents.lastname1'] . "</td>";
 echo "<td>" . $row['relation1'] . "</td>";
 echo "<td>" . $row['homephone1'] . "</td>";
 echo "<td>" . $row['cellphone1'] . "</td>";

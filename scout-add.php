@@ -52,9 +52,9 @@ $query1 = "INSERT INTO `scouts`(`scout_id`, `last_name`, `first_name`, `middle_n
 $exec = mysqli_query($con, $query1);
 
 $query2 = "INSERT INTO `parents`(`id`, `lastname1`, `firstname1`, `relation1`, `homephone1`, `cellphone1`,
- `email1`, `lastname2`, `firstname2`, `relation2`, `homephone2`, `cellphone2`, `email2`) 
+ `email1`, `lastname2`, `firstname2`, `relation2`, `homephone2`, `cellphone2`, `email2`, `scout_first`,`scout_last`) 
 VALUES (NULL,'".$parent1lastname."','".$parent1firstname."','".$parent1relation."','".$parent1homephone."','".$parent1cellphone."','".$parent1email."',
-	'".$parent2lastname."', '".$parent2firstname."','".$parent2relation."','".$parent2homephone."','".$parent2cellphone."','".$parent2email."')";
+	'".$parent2lastname."', '".$parent2firstname."','".$parent2relation."','".$parent2homephone."','".$parent2cellphone."','".$parent2email."','".$firstname."','".$lastname."')";
 
 $exec = mysqli_query($con, $query2);
 
