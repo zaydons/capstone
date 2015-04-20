@@ -5,43 +5,6 @@ if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-// $firstname = $_POST['firstname'];
-// $middlename = $_POST['middlename'];
-// $lastname = $_POST['lastname'];
-// $bsaid = $_POST['bsaid'];
-// $address = $_POST['address'];
-// $city = $_POST['city'];
-// $state = $_POST['state'];
-// $zip = $_POST['zip'];
-// $dob = $_POST['dob'];
-// $homephone = $_POST['homephone'];
-// $cellphone = $_POST['cellphone'];
-// $email1 = $_POST['email1'];
-// $email2 = $_POST['email2'];
-// $datejoined = $_POST['datejoined'];
-// $rank = $_POST['rank'];
-// $rankdate = $_POST['rankdate'];
-// $leadership = $_POST['leadership'];
-// $parent1firstname = $_POST['parent1firstname'];
-// $parent1lastname = $_POST['parent1lastname'];
-// $parent1relation = $_POST['parent1relation'];
-// $parent1homephone = $_POST['parent1homephone'];
-// $parent1cellphone = $_POST['parent1cellphone'];
-// $parent1email = $_POST['parent1email'];
-// $parent2firstname = $_POST['parent2firstname'];
-// $parent2lastname = $_POST['parent2lastname'];
-// $parent2relation = $_POST['parent2relation'];
-// $parent2homephone = $_POST['parent2homephone'];
-// $parent2cellphone = $_POST['parent2cellphone'];
-// $parent2email = $_POST['parent2email'];
-// $emergency1firstname = $_POST['emergency1firstname'];
-// $emergency1lastname = $_POST['emergency1lastname'];
-// $emergency1phone = $_POST['emergency1phone'];
-// $emergency2firstname = $_POST['emergency2firstname'];
-// $emergency2lastname = $_POST['emergency2lastname'];
-// $emergency2phone = $_POST['emergency2phone'];
-
-
 $firstname = mysqli_real_escape_string($con, $_POST['firstname']);
 $middlename = mysqli_real_escape_string($con, $_POST['middlename']);
 $lastname = mysqli_real_escape_string($con, $_POST['lastname']);
@@ -98,10 +61,10 @@ $query3 = "INSERT INTO `emergency_contact`(`id`, `lastname1`, `firstname1`, `pho
 
 $exec = mysqli_query($con, $query3);
 
-if (!mysqli_query($con,$sql)) {
+if (!mysqli_query($con,$query3)) {
   die('Error: ' . mysqli_error($con));
 }
-echo "1 record added";
+header("Location: add-scout.php");
 
 
 ?>
