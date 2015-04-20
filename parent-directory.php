@@ -34,7 +34,7 @@ echo "<table class='table table-striped table-hover'>
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
-echo "<td>" . $row['first_name'] , $row['last_name'] . "</td>" ; 
+echo "<td>" . $row['scout_first']. " " .$row['scout_last'] . "</td>" ; 
 echo "<td>" . $row['firstname1'] , $row['parents.lastname1'] . "</td>";
 echo "<td>" . $row['relation1'] . "</td>";
 echo "<td>" . $row['homephone1'] . "</td>";

@@ -32,7 +32,7 @@ echo "<td>" . $row['first_name'] . "</td>";
 echo "<td>" . $row['last_name'] . "</td>";
 echo "<td>" . $row['rank'] . "</td>";
 echo "<td>" . $row['rank_date'] . "</td>";
-echo "<td> <button type='button' class='btn btn-primary btn-xs'>Edit</button> </td>"; 
+echo "<td> <a href='edit-advancement.php?scout_id=$row[scout_id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
 
 echo "</tr>";
 }
