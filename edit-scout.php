@@ -113,8 +113,6 @@ $row = mysqli_fetch_row($result);
                       <input type="text" class="form-control" id="zip" value="<?php echo "$row[8]"?>">
                     </div>
                   </div>
-
-
                 </fieldset>
 </form>
 
