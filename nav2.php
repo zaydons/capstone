@@ -64,7 +64,7 @@ navbar-default-link-active-color">
       <ul class="dropdown-menu">
         <li><a href="logout.php">Logout</a></li>
         <li class="divider"></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="new-user.php">New User</a></li>
       </ul>
     </li>
   </ul>

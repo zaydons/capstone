@@ -1,13 +1,6 @@
-<?php
-	session_start();
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Login Form</title>
-<link href="loginmodule.css" rel="stylesheet" type="text/css" />
-</head>
+<?php include('header.php') ?>
+<?php require_once('auth.php');?>
+<?php require_once('config.php');?>
 <body>
 <?php
 	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -19,33 +12,45 @@
 		unset($_SESSION['ERRMSG_ARR']);
 	}
 ?>
-<form id="loginForm" name="loginForm" method="post" action="register-exec.php">
-  <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
-    <tr>
-      <th>First Name </th>
-      <td><input name="fname" type="text" class="textfield" id="fname" /></td>
-    </tr>
-    <tr>
-      <th>Last Name </th>
-      <td><input name="lname" type="text" class="textfield" id="lname" /></td>
-    </tr>
-    <tr>
-      <th width="124">Login</th>
-      <td width="168"><input name="login" type="text" class="textfield" id="login" /></td>
-    </tr>
-    <tr>
-      <th>Password</th>
-      <td><input name="password" type="password" class="textfield" id="password" /></td>
-    </tr>
-    <tr>
-      <th>Confirm Password </th>
-      <td><input name="cpassword" type="password" class="textfield" id="cpassword" /></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input type="submit" name="Submit" value="Register" /></td>
-    </tr>
-  </table>
+<form class="form-horizontal" id="loginForm" name="loginForm" method="post" action="register-exec.php">
+  <fieldset>
+    <div class="form-group">        
+      <label for="fname" class="col-lg-2 control-label">First Name</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="fname">
+      </div>
+    </div>    
+    <div class="form-group">        
+      <label for="lname" class="col-lg-2 control-label">Last Name</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="lname">
+      </div>
+    </div>
+    <div class="form-group">        
+      <label for="username" class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="login">
+      </div>
+    </div>
+    <div class="form-group">        
+      <label for="password" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-6">
+        <input type="password" class="form-control" name="password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <label for="cpassword" class="col-lg-2 control-label">Confirm Password</label>
+      <div class="col-lg-6">
+        <input type="password" class="form-control" name="cpassword">
+      </div>
+    </div>    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <!-- <button class="btn btn-default">Cancel</button> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
 </form>
 </body>
 </html>

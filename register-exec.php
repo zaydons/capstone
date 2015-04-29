@@ -41,23 +41,23 @@
 	
 	//Input Validations
 	if($fname == '') {
-		$errmsg_arr[] = 'First name missing';
+		$errmsg_arr[] = 'First name needed ';
 		$errflag = true;
 	}
 	if($lname == '') {
-		$errmsg_arr[] = 'Last name missing';
+		$errmsg_arr[] = 'Last name needed';
 		$errflag = true;
 	}
 	if($login == '') {
-		$errmsg_arr[] = 'Login ID missing';
+		$errmsg_arr[] = 'Username needed';
 		$errflag = true;
 	}
 	if($password == '') {
-		$errmsg_arr[] = 'Password missing';
+		$errmsg_arr[] = 'Password needed';
 		$errflag = true;
 	}
 	if($cpassword == '') {
-		$errmsg_arr[] = 'Confirm password missing';
+		$errmsg_arr[] = 'Confirm password';
 		$errflag = true;
 	}
 	if( strcmp($password, $cpassword) != 0 ) {
@@ -71,7 +71,7 @@
 		$result = mysql_query($qry);
 		if($result) {
 			if(mysql_num_rows($result) > 0) {
-				$errmsg_arr[] = 'Login ID already in use';
+				$errmsg_arr[] = 'Username is already in use';
 				$errflag = true;
 			}
 			@mysql_free_result($result);
@@ -85,7 +85,7 @@
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: register-form.php");
+		header("location: new-user.php");
 		exit();
 	}
 
