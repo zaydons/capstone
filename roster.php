@@ -18,19 +18,11 @@ $result = mysqli_query($con,"SELECT * FROM scouts");
 echo "<h3> Scouts </h3>";
 echo "<table class='table table-striped table-hover'>
 <tr>
-<th>Last Name</th>
 <th>First Name</th>
-<th>Position</th>
-<th>Email Address</th>
-<th>Email Address 2</th>
-<th>Cell Phone</th>
-<th>Home Phone</th>
-<th>Address</th>
-<th>City</th>
-<th>State</th>
-<th>Zip Code</th>
-<th>Edit</th>
-<th>Delete</th>
+<th>Last Name</th>
+
+<th>Parents</th>
+<th>Emergency Contact</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
@@ -38,17 +30,8 @@ while($row = mysqli_fetch_array($result))
 echo "<tr>";
 echo "<td>" . $row['last_name'] . "</td>";
 echo "<td>" . $row['first_name'] . "</td>";
-echo "<td>" . $row['leadership_position'] . "</td>";
-echo "<td>" . $row['email1'] . "</td>";
-echo "<td>" . $row['email2'] . "</td>";
-echo "<td>" . $row['cell_phone'] . "</td>";
-echo "<td>" . $row['home_phone'] . "</td>";
-echo "<td>" . $row['address'] . "</td>";
-echo "<td>" . $row['city'] . "</td>";
-echo "<td>" . $row['state'] . "</td>";
-echo "<td>" . $row['zip'] . "</td>";
-echo "<td> <a href='edit-scout.php?scout_id=$row[scout_id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
-echo "<td> <a href='delete-scout.php?scout_id=$row[scout_id]' onclick=\"return confirm('Really delete?');\"> <button type='button' class='btn btn-primary btn-xs'>Delete</button></a> </td>";
+echo "<td> <a href='parents.php?scout_id=$row[scout_id]'> <button type='button' class='btn btn-primary btn-xs'>View</button></a> </td>"; 
+echo "<td> <a href='emergency-contact.php?scout_id=$row[scout_id]'> <button type='button' class='btn btn-primary btn-xs'>View</button></a> </td>"; 
 echo "</tr>";
 }
 echo "</table>";

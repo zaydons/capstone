@@ -54,12 +54,14 @@ $exec = mysqli_query($con, $query1);
 $query2 = "INSERT INTO `parents`(`id`, `lastname1`, `firstname1`, `relation1`, `homephone1`, `cellphone1`,
  `email1`, `lastname2`, `firstname2`, `relation2`, `homephone2`, `cellphone2`, `email2`, `scout_first`,`scout_last`) 
 VALUES (NULL,'".$parent1lastname."','".$parent1firstname."','".$parent1relation."','".$parent1homephone."','".$parent1cellphone."','".$parent1email."',
-	'".$parent2lastname."', '".$parent2firstname."','".$parent2relation."','".$parent2homephone."','".$parent2cellphone."','".$parent2email."','".$firstname."','".$lastname."')";
+	'".$parent2lastname."', '".$parent2firstname."','".$parent2relation."','".$parent2homephone."','".$parent2cellphone."','".$parent2email."',
+	'".$firstname."','".$lastname."')";
 
 $exec = mysqli_query($con, $query2);
 
-$query3 = "INSERT INTO `emergency_contact`(`id`, `lastname1`, `firstname1`, `phone1`, `lastname2`, `firstname2`, `phone2`)
- VALUES (NULL,'".$emergency1lastname."','".$emergency1lastname."','".$emergency1phone."','".$emergency2lastname."','".$emergency2lastname."','".$emergency2phone."')";
+$query3 = "INSERT INTO `emergency_contact`(`id`, `lastname1`, `firstname1`, `phone1`, `lastname2`, `firstname2`, `phone2`, `scout_first`,`scout_last`)
+ VALUES (NULL,'".$emergency1lastname."','".$emergency1lastname."','".$emergency1phone."','".$emergency2lastname."','".$emergency2lastname."',
+ 	'".$emergency2phone."','".$firstname."','".$lastname."')";
 
 $exec = mysqli_query($con, $query3);
 
