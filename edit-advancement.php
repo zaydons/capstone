@@ -18,19 +18,18 @@ echo "scout id: " .$scout_id. " " ;
 $result = mysqli_query($con,"SELECT scout_id,first_name,last_name,rank,rank_date FROM scouts WHERE scout_id='$scout_id' ");
 $row = mysqli_fetch_array($result);
 
- var_dump($row);
-// echo $row[0];
-// echo $row[1];
-// echo $row[2];
-// echo $row[3];
+ //var_dump($row);
+ //echo $row[0];
+ //echo $row[1];
+ //echo $row[2];
+ //echo $row[3];
 ?>
 
 <form class="form-horizontal" method="POST" action="adv-edit.php">
                 <fieldset>
                   <div class="form-group">
-                    <label for="id" class="col-lg-2 control-label">id</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="id" name="id" readonly value="<?php echo "$row[0]"?>">
+                      <input type="hidden" class="form-control" id="id" name="id" readonly value="<?php echo "$row[0]"?>">
                     </div>
                   </div>
                   <div class="form-group">
@@ -49,14 +48,14 @@ $row = mysqli_fetch_array($result);
                     <label for="rank" class="col-lg-2 control-label">Rank</label>
                     <div class="col-lg-10">
                       <select class="form-control" id="rank" name="rank" value="<?php echo $row[3]; ?>">
-                        <option <?php if ($row[2] == None) echo 'selected'; ?> value="None">None</option>
-                        <option <?php if ($row[2] == Scout) echo 'selected'; ?> value="Scout">Scout</option>
-                        <option <?php if ($row[2] == Tenderfoot) echo 'selected'; ?> value="Tenderfoot">Tenderfoot</option>
-                        <option <?php if ($row[2] == 'Second Class') echo 'selected'; ?> value="Second Class">Second Class</option>
-                        <option <?php if ($row[2] == 'First Class') echo 'selected'; ?> value="First Class">First Class</option>
-                        <option <?php if ($row[2] == Star) echo 'selected'; ?> value="Star">Star</option>
-                        <option <?php if ($row[2] == Life) echo 'selected'; ?> value="Life">Life</option>
-                        <option <?php if ($row[2] == Eagle) echo 'selected'; ?> value="Eagle">Eagle</option>
+                        <option <?php if ($row[3] == 'None') echo 'selected'; ?> value="None">None</option>
+                        <option <?php if ($row[3] == 'Scout') echo 'selected'; ?> value="Scout">Scout</option>
+                        <option <?php if ($row[3] == 'Tenderfoot') echo 'selected'; ?> value="Tenderfoot">Tenderfoot</option>
+                        <option <?php if ($row[3] == 'Second Class') echo 'selected'; ?> value="Second Class">Second Class</option>
+                        <option <?php if ($row[3] == 'First Class') echo 'selected'; ?> value="First Class">First Class</option>
+                        <option <?php if ($row[3] == 'Star') echo 'selected'; ?> value="Star">Star</option>
+                        <option <?php if ($row[3] == 'Life') echo 'selected'; ?> value="Life">Life</option>
+                        <option <?php if ($row[3] == 'Eagle') echo 'selected'; ?> value="Eagle">Eagle</option>
                       </select>
                     </div>
                   </div>

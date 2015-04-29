@@ -24,54 +24,65 @@ $row = mysqli_fetch_row($result);
  // echo $row[2];
  // echo $row[3];
 ?>
-<form class="form-horizontal">
+<form class="form-horizontal" method="POST" action="train-edit.php">
                 <fieldset>
+                  <div class="form-group">
+                    <div class="col-lg-6">
+                      <input type="hidden" class="form-control" id="id" name="id" readonly value="<?php echo "$row[0]"?>">
+                    </div>
+                  </div>
                   <div class="form-group">
                     <label for="youth_protection" class="col-lg-2 control-label">Youth Protection</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="youth_protection" value="<?php echo "$row[1]"?>">
+                      <input type="date" class="form-control" id="youth_protection" name="youth_protection" value="<?php echo "$row[1]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="venturing_youth_protection" class="col-lg-2 control-label">Venturing Youth Protection</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="venturing_youth_protection" value="<?php echo "$row[2]"?>">
+                      <input type="date" class="form-control" id="venturing_youth_protection" name="venturing_youth_protection" value="<?php echo "$row[2]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="safe_swim" class="col-lg-2 control-label">Safe Swim</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="safe_swim" value="<?php echo "$row[3]"?>">
+                      <input type="date" class="form-control" id="safe_swim" name="safe_swim" value="<?php echo "$row[3]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="safety_afloat" class="col-lg-2 control-label">Safety Afloat</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="safety_afloat" value="<?php echo "$row[4]"?>">
+                      <input type="date" class="form-control" id="safety_afloat" name="safety_afloat" value="<?php echo "$row[4]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="physical_wellness" class="col-lg-2 control-label">Physical Wellness</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="physical_wellness" value="<?php echo "$row[5]"?>">
+                      <input type="date" class="form-control" id="physical_wellness" name="physical_wellness" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="weather_hazards" class="col-lg-2 control-label">Weather Hazards</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="weather_hazards" value="<?php echo "$row[6]"?>">
+                      <input type="date" class="form-control" id="weather_hazards" name="weather_hazards" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="climb_safely" class="col-lg-2 control-label">Climb Safely</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="climb_safely" value="<?php echo "$row[7]"?>">
+                      <input type="date" class="form-control" id="climb_safely" name="climb_safely" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="trek_safely" class="col-lg-2 control-label">Trek Safely</label>
                     <div class="col-lg-6">
-                      <input type="date" class="form-control" id="trek_safely" value="<?php echo "$row[8]"?>">
+                      <input type="date" class="form-control" id="trek_safely" name="trek_safely" value="<?php echo "$row[8]"?>">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <!-- <button class="btn btn-default">Cancel</button> -->
+                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </div>
                 </fieldset>

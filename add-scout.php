@@ -97,7 +97,7 @@
                   </div>
                   <div class="form-group">
                     <label for="rank" class="col-lg-2 control-label">Rank</label>
-                    <div class="col-lg-10">
+                    <div class="col-lg-6">
                       <select class="form-control" id="rank" name="rank">
                         <option value="None">None</option>
                         <option value="Scout">Scout</option>
@@ -119,7 +119,7 @@
 
                   <div class="form-group">
                     <label for="leadership_position" class="col-lg-2 control-label">Leadership Position</label>
-                    <div class="col-lg-10">
+                    <div class="col-lg-6">
                        <select class="form-control" id="leadership_position" name="leadership">
                         <option value="None">None</option>
                         <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
@@ -257,7 +257,7 @@
                   </div>
 
                   <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
+                    <div class="col-lg-6 col-lg-offset-2">
                       <!-- <button class="btn btn-default">Cancel</button> -->
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>

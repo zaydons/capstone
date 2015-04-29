@@ -26,24 +26,29 @@ $row = mysqli_fetch_row($result);
 // echo $row[3];
 ?>
 
-<form class="form-horizontal">
+<form class="form-horizontal" method="POST" action="scout-edit.php">
                 <fieldset>
                   <div class="form-group">
+                    <div class="col-lg-6">
+                      <input type="hidden" class="form-control" name="id" value="<?php echo "$row[0]"?>">
+                    </div>
+                  </div>                
+                  <div class="form-group">
                     <label for="last_name" class="col-lg-2 control-label">Last Name</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[1]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="last_name" disabled value="<?php echo "$row[1]"?>">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="first-name" class="col-lg-2 control-label">First Name</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="last_name" value="<?php echo "$row[2]"?>">
+                    <label for="first_name" class="col-lg-2 control-label">First Name</label>
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="first_name" disabled value="<?php echo "$row[2]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="leadership_position" class="col-lg-2 control-label">Position</label>
-                    <div class="col-lg-10">
-                       <select class="form-control" id="leadership_position">
+                    <div class="col-lg-6">
+                       <select class="form-control" name="leadership_position">
                         <option value="None">None</option>
                         <option value="Assistant Patrol Leader">Assistant Patrol Leader</option>
                         <option value="Assistant Senior Patrol Leader">Assistant Senior Patrol Leader</option>
@@ -67,50 +72,56 @@ $row = mysqli_fetch_row($result);
                   </div>
                   <div class="form-group">
                     <label for="email1" class="col-lg-2 control-label">Email Address</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="email1" value="<?php echo "$row[12]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="email1" value="<?php echo "$row[12]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="email2" class="col-lg-2 control-label">Email Address 2</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="email2" value="<?php echo "$row[13]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="email2" value="<?php echo "$row[13]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="cell_phone" class="col-lg-2 control-label">Cell Phone</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="cell_phone" value="<?php echo "$row[11]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="cell_phone" value="<?php echo "$row[11]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="home_phone" class="col-lg-2 control-label">Home Phone</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="home_phone" value="<?php echo "$row[10]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="home_phone" value="<?php echo "$row[10]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="address" class="col-lg-2 control-label">Address</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="address" value="<?php echo "$row[5]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="address" value="<?php echo "$row[5]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="city" class="col-lg-2 control-label">City</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="city" value="<?php echo "$row[6]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="city" value="<?php echo "$row[6]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="state" class="col-lg-2 control-label">State</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="state" value="<?php echo "$row[7]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="state" value="<?php echo "$row[7]"?>">
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="zip" class="col-lg-2 control-label">Zip</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="zip" value="<?php echo "$row[8]"?>">
+                    <div class="col-lg-6">
+                      <input type="text" class="form-control" name="zip" value="<?php echo "$row[8]"?>">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-6 col-lg-offset-2">
+                      <!-- <button class="btn btn-default">Cancel</button> -->
+                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </div>
                 </fieldset>

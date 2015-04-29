@@ -35,12 +35,12 @@ while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
 echo "<td>" . $row['scout_first']. " " .$row['scout_last'] . "</td>" ; 
-echo "<td>" . $row['firstname1'] , $row['parents.lastname1'] . "</td>";
+echo "<td>" . $row['firstname1']. " "  .$row['lastname1'] . "</td>";
 echo "<td>" . $row['relation1'] . "</td>";
 echo "<td>" . $row['homephone1'] . "</td>";
 echo "<td>" . $row['cellphone1'] . "</td>";
 echo "<td>" . $row['email1'] . "</td>";
-echo "<td>" . $row['firstname2'] , $row['lastname2'] . "</td>";
+echo "<td>" . $row['firstname2']. " "  .$row['lastname2'] . "</td>";
 echo "<td>" . $row['relation2'] . "</td>";
 echo "<td>" . $row['homephone2'] . "</td>";
 echo "<td>" . $row['cellphone2'] . "</td>";

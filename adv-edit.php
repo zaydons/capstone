@@ -13,15 +13,20 @@ echo $scout_id;
 echo $rank;
 echo $rankdate;
 
-$query = "UPDATE scouts SET rank='$rank', rankdate='$rankdate' WHERE scout_id='$scout_id' LIMIT 1";
+$query = "UPDATE scouts SET rank='".$rank."', rank_date='".$rankdate."' WHERE scout_id='".$scout_id."'";
+
+echo $query;
+
 // $query = mysqli_query("UPDATE `scouts` SET `rank` = '$rank', `rankdate` = '$rankdate' WHERE `scout_id` = '$scout_id'");
 $exec = mysqli_query($con, $query) or die (mysqli_error());
+
+echo $exec;
 // $exec = mysqli_query($con, $query);
 
 if (!mysqli_query($con,$query)) {
   die('Error: ' . mysqli_error($con));
 }
- header("Location: advancement.php");
+  header("Location: advancement.php");
 
 
 ?>
