@@ -4,14 +4,11 @@
 <h1>Welcome</h1>
 <?php include('nav2.php') ?>
 
-<p>
-	Welcome to TroopSoft, developed by Sal Zaydon.
-</p>
-<p>
-	I literally do not know what to put on this page, so I am just filling it with random text so it doesn't look so blank.
-</p>
-<p>
-	If you find any bugs please report them to me at zaydons@sunyit.edu
-</p>
+<p> Welcome to the Troop 322 TroopSoft. </p>
+<p> With this software you can track your troop's directories, as well as track scouts rank advancement. Also the added functionality 
+		of tracking adult leaders training has been added. </p>
+
+
+
 </body>
 </html>
