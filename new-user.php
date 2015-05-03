@@ -4,7 +4,7 @@
 
 <body>
 <h1>Add New User</h1>
-<?php include('nav2.php') ?>
+<?php include('nav2.php'); ?>
 <?php include('register-form.php'); ?>
 </body>
 </html>

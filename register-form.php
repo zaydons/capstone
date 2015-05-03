@@ -1,6 +1,3 @@
-<?php include('header.php') ?>
-<?php require_once('auth.php');?>
-<?php require_once('config.php');?>
 <body>
 <?php
 	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
