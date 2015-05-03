@@ -27,7 +27,6 @@ $con=mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 $result = mysqli_query($con,"SELECT email1,email2 FROM scouts");
 $row = mysqli_fetch_row($result);
 
-
 // Do while loop to send email.
 while($row=mysqli_fetch_assoc($result)){
 $to=$row['email'];

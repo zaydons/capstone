@@ -29,6 +29,7 @@ navbar-default-link-active-color">
         <!-- <li><a href="troop-directory.php">All</a></li> -->
         <li><a href="add-scout.php">Add Scout</a></li>
         <li><a href="add-leader.php">Add Leader</a></li>
+        <li><a href="add-patrol.php">Add Patrol</a></li>
       </ul>
     </li>
     <li class="dropdown">

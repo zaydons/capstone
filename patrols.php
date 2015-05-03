@@ -48,6 +48,7 @@ echo "<td>" . $row['member6'] . "</td>";
 echo "<td>" . $row['member7'] . "</td>";
 echo "<td>" . $row['member8'] . "</td>";
 echo "<td> <a href='edit-patrol.php?patrol_id=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Edit</button></a> </td>"; 
+echo "<td> <a href='delete-patrol.php?patrol_id=$row[id]'> <button type='button' class='btn btn-primary btn-xs'>Delete</button></a> </td>"; 
 
 echo "</tr>";
 }
