@@ -54,8 +54,8 @@ navbar-default-link-active-color">
       <ul class="dropdown-menu">
         <li><a href="contact-scouts.php">Contact Scouts</a></li>
         <li><a href="contact-parents.php">Contact Parents</a></li>
-        <li><a href="contact-committee.php">Contact Commitee</a></li>
-        <li><a href="contact-all.php">Contact All</a></li>
+        <li><a href="contact-committee.php">Contact Leaders</a></li>
+        <!-- <li><a href="contact-all.php">Contact All</a></li> -->
       </ul>
     </li>
   </ul>

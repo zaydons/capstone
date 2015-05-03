@@ -6,65 +6,35 @@
 <h1>Contact Scouts</h1>
 <?php include('nav2.php') ?>
 
-<?php
-// Check, if submitted.
-if($Submit){
+          <div class="col-lg-12">
+            <div class="well bs-component" data-relatedvars="legend-color,legend-border-color,input-color,input-height-base,input-bg,input-border,input-border-radius,input-border-focus,input-color-placeholder,input-bg-disabled,input-height-small,input-height-large,state-success-text,state-success-bg,state-warning-text,state-warning-bg,state-danger-text,state-danger-bg,input-group-addon-bg,input-group-addon-border-color,input-border-radius-large,input-border-radius-small">
+              <form class="form-horizontal" method="POST" action="scout-contact.php">
+                <fieldset>
+                <legend>Emailing all scouts</legend>
+                  <div class="form-group">
+                    <label for="subject" class="col-lg-2 control-label">Subject</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                  </div>
+                 
+                  <div class="form-group">
+                    <label for="message" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                                    
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <!-- <button class="btn btn-default">Cancel</button> -->
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
 
-// Get variables from POST method form.
-$subject=$_POST['subject'];
-$note=$_POST['note'];
-
-$sender="admin@szaydon.me"; // Your Email here.
-
-echo "Email has been sent to:";
-
-// Connect database
-$con=mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
-// mysql_connect("localhost","","");
-// mysql_select_db("mail");
-
-// $rs=mysqli_query("select email1,email2 from scouts");
-$result = mysqli_query($con,"SELECT email1,email2 FROM scouts");
-$row = mysqli_fetch_row($result);
-
-// Do while loop to send email.
-while($row=mysqli_fetch_assoc($result)){
-$to=$row['email'];
-$mail_from="From:$email n";
-$mail_from .="Content-Type: text/html; charset=utf-8 n";
-
-mail($to,$subject,$note,$mail_from);
-
-// Show sent emails.
-echo "$row[email]<br>";
-}
-}else{
-
-// Do following codes if not found "Submit" value.(Not submitted) 
-?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-</head>
-<title>Email Form</title>
-<body>
-<form action="<? echo $PHP_SELF; ?>" method="post" name="form" id="form">
-<table>
-<tr>
-<td align="right">Subject : </td>
-<td><input name="email" type="text" id="email" /></td>
-</tr>
-<tr>
-<td align="right" valign="top">Note : </td>
-<td><textarea name="comment" cols="60" rows="5" id="comment"></textarea></td>
-</tr>
-</table>
-<input type="submit" name="Submit" value="Send Email" />
-</form>
-</body>
-</html>
-<?php 
-	} ?>
 
 </body>
 </html>
