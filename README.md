@@ -8,7 +8,7 @@ All information that is in the database is generated, so don't think you are ste
 ----------
 
 ## Server Reqs. ##
-I will be using a server that runs Apache 2.2.15, along with MySQL 5.5.41 running on a CentOS 6.5 Virtual Machine. I don't foresee there being anything specific for Apache or MySQL, so if you feel like you want to use any replacements of those go right ahead. 
+Looks to be fully working with php7, haven't run into any errors there
 
 
 ----------
