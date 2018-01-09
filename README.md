@@ -1,4 +1,6 @@
-With a few more years of programming under my belt, I realize that this isn't a great piece of work; and there for I am archiving it.. Maybe someday down the line I will make something more secure and cleaner
+# With a few more years of programming under my belt, I realize that this isn't a great piece of work; and there for I am archiving it.. Maybe someday down the line I will make something cleaner and more secure..
+
+-----------
 
 ## Sal Zaydon's Capstone ##
 
